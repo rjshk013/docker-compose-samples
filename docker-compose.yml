@@ -1,3 +1,4 @@
+#it will create jenkins server ,if needed change the docker image,port and docker-compose up
 version: '3.3'
 services:
   jenkins:
