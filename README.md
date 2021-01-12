@@ -35,3 +35,8 @@ reference : https://www.docker.com/blog/how-to-setup-your-local-node-js-developm
 To build & run a jenkinsblueocean docker container use the docker compose file : docker-compose_jenkinsblueocean.yml
 
 docker-compose -f docker-compose_jenkinsblueocean.yml up 
+
+
+To create sonarcube server with postgresql for production environment use docker-compose : docker-compose_sonarcube_postgresql.yml
+
+docker-compose -f docker-compose_sonarcube_postgresql.yml up
