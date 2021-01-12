@@ -30,3 +30,8 @@ must see output as below
 {"code":"success","meta":{"total":0,"count":0},"payload":[]}
 
 reference : https://www.docker.com/blog/how-to-setup-your-local-node-js-development-environment-using-docker-part-2/
+
+
+To build & run a jenkinsblueocean docker container use the docker compose file : docker-compose_jenkinsblueocean.yml
+
+docker-compose -f docker-compose_jenkinsblueocean.yml up 
