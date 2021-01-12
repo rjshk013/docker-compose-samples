@@ -40,3 +40,14 @@ docker-compose -f docker-compose_jenkinsblueocean.yml up
 To create sonarcube server with postgresql for production environment use docker-compose : docker-compose_sonarcube_postgresql.yml
 
 docker-compose -f docker-compose_sonarcube_postgresql.yml up
+
+To create jenkinsblueocean container with sonarcube + postgresql i a single docker compose file use : docker-compose_sonarcube_jenkins.yml
+
+Note: before running docker compose configure your host as per below commands as root user 
+
+sysctl -w vm.max_map_count=262144
+sysctl -w fs.file-max=65536
+ulimit -n 65536
+ulimit -u 4096
+
+reference : https://hub.docker.com/_/sonarqube/
